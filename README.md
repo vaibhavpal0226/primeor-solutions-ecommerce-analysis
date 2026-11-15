@@ -33,6 +33,6 @@ This repository contains the rigorous data cleaning, missing value imputation, t
 
 ## 📁 Repository Structure
 ```text
-├── data/
+├── excel/
 │   └── cleaned_dataset.xlsx  # Fully cleaned and validated 51k+ row dataset
 └── README.md
