@@ -6,9 +6,8 @@ This repository contains the rigorous data cleaning, missing value imputation, t
 ---
 
 ## 🛠️ Tech Stack & Tools
-* **Spreadsheet Analysis:** Microsoft Excel (Advanced Formulas, Array Formulas, Pivot Tables)
+* **Spreadsheet Analysis:** Microsoft Excel (Advanced Formulas, Array Formulas, XLOOKUP)
 * **Statistical Methods:** Interquartile Range (IQR) Analysis via `QUARTILE.EXC`
-* **Data Engineering Standards:** Relational imputation, whitespace stripping, and datatype coercion
 
 ---
 
