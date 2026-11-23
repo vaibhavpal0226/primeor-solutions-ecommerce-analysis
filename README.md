@@ -24,6 +24,15 @@ This project presents an end-to-end data cleaning, exploratory analysis, and vis
 * **Statistical Methods:** Interquartile Range (IQR) Analysis via `QUARTILE.EXC`
 
 ---
+
+## 📁 Repository Structure
+```text
+├── excel/
+│   └── cleaned_dataset.xlsx  # Fully cleaned and validated 51k+ row dataset
+└── README.md
+```
+---
+
 ## 🏗️ Technical Workflow
 
 ### Phase 1: Data Cleaning & Validation
@@ -50,9 +59,3 @@ This project presents an end-to-end data cleaning, exploratory analysis, and vis
 * Built dynamic Pivot Tables and structured charts to evaluate regional contributions, category profitability, customer segment shares, and multi-year chronological trends.
 
 ---
-
-## 📁 Repository Structure
-```text
-├── excel/
-│   └── cleaned_dataset.xlsx  # Fully cleaned and validated 51k+ row dataset
-└── README.md
