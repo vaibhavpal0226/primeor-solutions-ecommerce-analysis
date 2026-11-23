@@ -37,6 +37,9 @@ This project presents an end-to-end data cleaning, exploratory analysis, and vis
 * Applied explicit currency formatting (`#,##0.00`) and standard integer formatting across all quantitative columns.
 * Ensured clean, uniform column headers for seamless ingestion into Power BI and SQL databases.
 
+## Phase 1: Data Cleaning & Validation
+
+
 ---
 
 ## 📁 Repository Structure
