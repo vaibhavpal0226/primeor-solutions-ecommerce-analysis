@@ -5,6 +5,12 @@ This project presents an end-to-end data cleaning, exploratory analysis, and vis
 
 ---
 
+![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
+![SQL](https://img.shields.io/badge/MySQL-00000F?style=for-the-badge&logo=mysql&logoColor=white)
+![Power_BI](https://img.shields.io/badge/Power_BI-F2C811?style=for-the-badge&logo=powerbi&logoColor=black)
+
+---
+
 ## 📈 Key Performance Indicators (KPI Summary)
 * Total Sales (Revenue): ₹1,26,35,222.00
 * Total Net Profit: ₹14,67,722.99
@@ -18,26 +24,27 @@ This project presents an end-to-end data cleaning, exploratory analysis, and vis
 * **Statistical Methods:** Interquartile Range (IQR) Analysis via `QUARTILE.EXC`
 
 ---
+## 🏗️ Technical Workflow
 
-## Phase 1: Data Cleaning & Validation
+### Phase 1: Data Cleaning & Validation
 
-### 1. Missing Value Imputation
-* **`customer_name`**: Implemented relational lookup matching via `XLOOKUP` using `order_id` as a primary reference key.
-* **`profit`**: Imputed 14 profit missing values using the Median Profit grouped by Product `sub_category`. Median was chosen over average to avoid extreme financial outliers.
+* **Missing Value Imputation**
+  * **`customer_name`**: Implemented relational lookup matching via `XLOOKUP` using `order_id` as a primary reference key.
+  * **`profit`**: Imputed 14 profit missing values using the Median Profit grouped by Product `sub_category`. Median was chosen over average to avoid extreme financial outliers.
 
-### 2. Text & Date Standardization
-* **Whitespace & Noise Removal**: Applied `=PROPER(TRIM(CLEAN(...)))` to eliminate hidden non-printable characters, extra spacing, and inconsistent title casing across all categorical text columns.
-* **Date Correction**: Converted unstructured text-formatted dates into true, chronologically sortable serial dates using Excel's **Text to Columns** wizard (`YYYY-MM-DD` formatting).
+* **Text & Date Standardization**
+  * **Whitespace & Noise Removal**: Applied `=PROPER(TRIM(CLEAN(...)))` to eliminate hidden non-printable characters, extra spacing, and inconsistent title casing across all categorical text columns.
+  * **Date Correction**: Converted unstructured text-formatted dates into true, chronologically sortable serial dates using Excel's **Text to Columns** wizard (`YYYY-MM-DD` formatting).
 
-### 3. Numerical Validation & Outlier Treatment
-* **Anomaly Detection**: Audited financial and inventory columns, successfully identifying and removing a zero-sales transactional anomaly (`Sales = 0`, `Quantity = 1`).
-* **IQR Outlier Analysis**: Mapped upper and lower bounds using the $1.5 \times \text{IQR}$ rule (`QUARTILE.EXC`). Rather than blindly deleting high-ticket sales or profit extremes, evaluated them and **retained genuine business outliers** (e.g., bulk B2B wholesale orders).
+* **Numerical Validation & Outlier Treatment**
+  * **Anomaly Detection**: Audited financial and inventory columns, successfully identifying and removing a zero-sales transactional anomaly (`Sales = 0`, `Quantity = 1`).
+  * **IQR Outlier Analysis**: Mapped upper and lower bounds using the $1.5 \times \text{IQR}$ rule (`QUARTILE.EXC`). Rather than blindly deleting high-ticket sales or profit extremes, evaluated them and **retained genuine business outliers** (e.g., bulk B2B wholesale orders).
 
-### 4. Presentation & Formatting Polish
-* Applied explicit currency formatting (`#,##0.00`) and standard integer formatting across all quantitative columns.
-* Ensured clean, uniform column headers for seamless ingestion into Power BI and SQL databases.
+* **Presentation & Formatting Polish**
+  * Applied explicit currency formatting (`#,##0.00`) and standard integer formatting across all quantitative columns.
+  * Ensured clean, uniform column headers for seamless ingestion into Power BI and SQL databases.
 
-## Phase 2: Basic Excel Analysis & Pivot Charts
+### Phase 2: Basic Excel Analysis & Pivot Charts
 
 
 ---
