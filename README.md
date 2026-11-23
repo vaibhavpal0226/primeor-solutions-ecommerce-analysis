@@ -46,6 +46,8 @@ This project presents an end-to-end data cleaning, exploratory analysis, and vis
 
 ### Phase 2: Basic Excel Analysis & Pivot Charts
 
+* Extracted Top 5 Revenue-Generating Products (dominated by high-ticket smartphones) and Top 5 Loss-Making Products (highlighting margin leakage from printers and heavy furniture).
+* Built dynamic Pivot Tables and structured charts to evaluate regional contributions, category profitability, customer segment shares, and multi-year chronological trends.
 
 ---
 
