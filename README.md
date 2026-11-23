@@ -1,7 +1,15 @@
 # 🛒 E-Commerce Data Cleaning & Validation Pipeline
 
 ## 📌 Project Overview
-This repository contains the rigorous data cleaning, missing value imputation, text standardization, and outlier analysis pipeline executed on a 51,271-row e-commerce transactional dataset. Built as part of the data analytics internship at Primeor Solutions, this project emphasizes data integrity, statistical accuracy, and professional documentation.
+This project presents an end-to-end data cleaning, exploratory analysis, and visual dashboard implementation based on a raw e-commerce dataset comprising 51,271 transactional records. Built as part of the data analytics internship at Primeor Solutions, this project emphasizes data integrity, statistical accuracy, and professional documentation.
+
+---
+
+## 📈 Key Performance Indicators (KPI Summary)
+* Total Sales (Revenue): ₹1,26,35,222.00
+* Total Net Profit: ₹14,67,722.99
+* Average Discount Rate: 14.29%
+* Overall Profit Margin: ~11.61%
 
 ---
 
@@ -11,7 +19,7 @@ This repository contains the rigorous data cleaning, missing value imputation, t
 
 ---
 
-## 🔍 Key Data Cleaning & Processing Steps
+## Phase 1: Data Cleaning & Validation
 
 ### 1. Missing Value Imputation
 * **`customer_name`**: Implemented relational lookup matching via `XLOOKUP` using `order_id` as a primary reference key.
