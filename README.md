@@ -28,7 +28,8 @@ This project presents an end-to-end data cleaning, exploratory analysis, and vis
 ## 📁 Repository Structure
 ```text
 ├── excel/
-│   └── cleaned_dataset.xlsx  # Fully cleaned and validated 51k+ row dataset
+│   │── cleaned_dataset.xlsx  # Fully cleaned and validated 51k+ row dataset
+│   └── excel_analysis_file.xlsx # Workbook containing Pivot Tables and visual
 └── README.md
 ```
 ---
