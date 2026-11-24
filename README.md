@@ -48,10 +48,9 @@ This project documents an end-to-end data analytics workflow on a **51,271-row e
 ### Level 2: MySQL Migration, Queries & Analytical Insights
 
 #### Task 1: Import Cleaned Dataset into SQL
-* Formatted date columns (`order_date`, `ship_date`) as `YYYY-MM-DD`, stripped currency symbols and commas from numeric columns, and exported the cleaned data as a CSV.
-* Created the `primeor_ecommerce` database and `orders` table with an auto-incrementing primary key (`id`) and explicit data types (`DATE`, `VARCHAR`, `INT`, `DECIMAL`) across all 21 columns.
-* Loaded the CSV using `LOAD DATA INFILE` from MySQL's secure upload directory with `CHARACTER SET latin1` to resolve accented character encoding (`\xE1n`) in state names.
-* Verified row count (`51,271`) and reconciled core totals (`Sales`, `Profit`, `Avg Discount`) against Excel.
+* Formatted date columns (order_date, ship_date) into YYYY-MM-DD format, stripped currency symbols and thousand-separator commas from numeric fields, and exported the cleaned Excel sheet as a CSV file.
+* Created primeor_ecommerce database and designed the orders table with an auto-incrementing primary key (id) and explicit data types (DATE, VARCHAR, INT, DECIMAL)
+* Loaded the CSV into MySQL using LOAD DATA INFILE via the secure uploads directory (secure_file_priv) for speed optimization and specified CHARACTER SET latin1 to avoid string errors.
 
 #### Task 2: SQL Queries Executed
 * Executed SQL queries for:
