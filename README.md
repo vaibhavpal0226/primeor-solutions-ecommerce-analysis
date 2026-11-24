@@ -1,4 +1,4 @@
-# 🛒 E-Commerce Data Cleaning & Validation Pipeline
+# 🛒 E-Commerce Sales & Profitability Analytics Project
 
 ## 📌 Project Overview
 This project documents an end-to-end data analytics workflow on a **51,271-row e-commerce transaction dataset** (covering order dates, shipping details, customers, segments, locations, product categories, sales, quantity, discount, profit, and shipping cost). The work spans data cleaning and Excel analysis (Level 1), MySQL database migration and analytical querying (Level 2), and interactive dashboarding in Power BI (Level 3). Built as part of the data analytics internship at Primeor Solutions.
