@@ -52,16 +52,16 @@ This project documents an end-to-end data analytics workflow on a **51,271-row e
 
 #### Task 2: SQL Queries Executed
 * Executed SQL queries for:
-1. Top 10 profitable products
-2. Top 10 customers by sales
-3. Region-wise total sales
-4. Category-wise average profit
-5. Highest discount category
-6. Orders with negative profit
-7. Monthly sales trend
-8. Market-wise revenue analysis
-9. Top-performing sub-categories
-10. Ship mode usage analysis
+  * Top 10 profitable products
+  * Top 10 customers by sales
+  * Region-wise total sales
+  * Category-wise average profit
+  * Highest discount category
+  * Orders with negative profit
+  * Monthly sales trend
+  * Market-wise revenue analysis
+  * Top-performing sub-categories
+  * Ship mode usage analysis
 
 #### Task 3: Key SQL Insights
 * APAC generates the highest revenue of more than 35 lakhs (across 5400+ orders) with 4 lakh+ in profit (which is  12.20% profit margin). Meanwhile Canada has lowest revenue of nearly 67 thousand but has highest profit margin (26.56%) amongs all market and EMEA has the lowest profit margin (5.44%).
