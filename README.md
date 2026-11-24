@@ -1,7 +1,7 @@
 # 🛒 E-Commerce Data Cleaning & Validation Pipeline
 
 ## 📌 Project Overview
-This project presents an end-to-end data cleaning, exploratory analysis, and visual dashboard implementation based on a raw e-commerce dataset comprising 51,271 transactional records. Built as part of the data analytics internship at Primeor Solutions, this project emphasizes data integrity, statistical accuracy, and professional documentation.
+This project documents an end-to-end data analytics workflow on a **51,271-row e-commerce transaction dataset** (covering order dates, shipping details, customers, segments, locations, product categories, sales, quantity, discount, profit, and shipping cost). The work spans data cleaning and Excel analysis (Level 1), MySQL database migration and analytical querying (Level 2), and interactive dashboarding in Power BI (Level 3). Built as part of the data analytics internship at Primeor Solutions.
 
 ---
 
@@ -34,29 +34,40 @@ This project presents an end-to-end data cleaning, exploratory analysis, and vis
 ```
 ---
 
-## 🏗️ Technical Workflow
+## 🏗️ Project Workflow
 
-### Phase 1: Data Cleaning & Validation
+### Level 1: Data Cleaning, Excel Analysis & Pivot Reporting
 
-* **Missing Value Imputation**
-  * **`customer_name`**: Implemented relational lookup matching via `XLOOKUP` using `order_id` as a primary reference key.
-  * **`profit`**: Imputed 14 profit missing values using the Median Profit grouped by Product `sub_category`. Median was chosen over average to avoid extreme financial outliers.
+* **Data Cleaning & Validation:** Audited all 51,271 rows, resolved hidden whitespace and text-casing inconsistencies, handled missing values, converted dates to standard formats, and evaluated outliers using the $1.5 \times \text{IQR}$ rule while retaining legitimate high-value transactions.
+* **Core Metrics & Rankings:** Computed baseline KPIs and identified top revenue-generating and loss-making products.
+* **Pivot Tables & Charts:** Analyzed regional sales, category profit, customer segment shares, and yearly/monthly sales trends.
 
-* **Text & Date Standardization**
-  * **Whitespace & Noise Removal**: Applied `=PROPER(TRIM(CLEAN(...)))` to eliminate hidden non-printable characters, extra spacing, and inconsistent title casing across all categorical text columns.
-  * **Date Correction**: Converted unstructured text-formatted dates into true, chronologically sortable serial dates using Excel's **Text to Columns** wizard (`YYYY-MM-DD` formatting).
+### Level 2: MySQL Migration, Queries & Analytical Insights
 
-* **Numerical Validation & Outlier Treatment**
-  * **Anomaly Detection**: Audited financial and inventory columns, successfully identifying and removing a zero-sales transactional anomaly (`Sales = 0`, `Quantity = 1`).
-  * **IQR Outlier Analysis**: Mapped upper and lower bounds using the $1.5 \times \text{IQR}$ rule (`QUARTILE.EXC`). Rather than blindly deleting high-ticket sales or profit extremes, evaluated them and **retained genuine business outliers** (e.g., bulk B2B wholesale orders).
+#### Task 1: Import Cleaned Dataset into SQL
+* Formatted date columns (`order_date`, `ship_date`) as `YYYY-MM-DD`, stripped currency symbols and commas from numeric columns, and exported the cleaned data as a CSV.
+* Created the `primeor_ecommerce` database and `orders` table with an auto-incrementing primary key (`id`) and explicit data types (`DATE`, `VARCHAR`, `INT`, `DECIMAL`) across all 21 columns.
+* Loaded the CSV using `LOAD DATA INFILE` from MySQL's secure upload directory with `CHARACTER SET latin1` to resolve accented character encoding (`\xE1n`) in state names.
+* Verified row count (`51,271`) and reconciled core totals (`Sales`, `Profit`, `Avg Discount`) against Excel.
 
-* **Presentation & Formatting Polish**
-  * Applied explicit currency formatting (`#,##0.00`) and standard integer formatting across all quantitative columns.
-  * Ensured clean, uniform column headers for seamless ingestion into Power BI and SQL databases.
+#### Task 2: SQL Queries Executed
+* Executed SQL queries for:
+1. Top 10 profitable products
+2. Top 10 customers by sales
+3. Region-wise total sales
+4. Category-wise average profit
+5. Highest discount category
+6. Orders with negative profit
+7. Monthly sales trend
+8. Market-wise revenue analysis
+9. Top-performing sub-categories
+10. Ship mode usage analysis
 
-### Phase 2: Basic Excel Analysis & Pivot Charts
-
-* Extracted Top 5 Revenue-Generating Products (dominated by high-ticket smartphones) and Top 5 Loss-Making Products (highlighting margin leakage from printers and heavy furniture).
-* Built dynamic Pivot Tables and structured charts to evaluate regional contributions, category profitability, customer segment shares, and multi-year chronological trends.
+#### Task 3: Key SQL Insights
+* **Highest-Revenue Market:** **APAC** leads in revenue (**35,81,785.00** across 5,436 orders) and profit (**4,37,023.46**)[cite: 13]. **Canada** posts the highest profit margin (**26.56%**) on smaller volume (**66,932.00**), while **EMEA** shows a thin **5.44%** margin[cite: 13].
+* **Least Profitable Categories:** **Furniture** generates the lowest category profit (**2,86,165.04**) alongside the highest average discount (**16.80%**, peak **85.00%**)[cite: 10]. At the sub-category level, **Tables** is the only loss-making sub-category (**-64,113.61** profit / **-8.48%** margin on **756,031.00** sales)[cite: 14].
+* **Most Commonly Used Shipping Mode:** **Standard Class** is the primary shipping mode (**59.57%** usage share, **75,74,395.00** sales, **8,89,476.70** profit) and has the lowest average shipping cost (**19.97**), whereas **Same Day** has the lowest share (**5.30%**) and highest average shipping cost (**42.96**)[cite: 15].
+* **Top Products, Customers & Loss Drivers:** *Canon imageCLASS 2200 Advanced Copier* leads product profit (**25,199.94** on **61,600.00** sales)[cite: 6]. Among top-10 revenue customers, *Tom Ashbrook* leads sales (**40,417.00**), while *Sean Miller* ranks 5th in sales (**33,194.00**) with a net loss of **-842.63**[cite: 7]. Heavy discounting (often **50%–85%**) drives major negative-profit orders such as `CA-2013-108196` (**-6,892.37** loss at **53.33%** avg discount)[cite: 11].
+* **Regional & Seasonal Patterns:** **Central** leads all regions in sales (**28,21,740.00** / **22.33%** share)[cite: 8], and monthly order volume and revenue climb strongly toward year-end[cite: 12].
 
 ---
