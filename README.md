@@ -48,6 +48,7 @@ This project documents an end-to-end data analytics workflow on a **51,271-row e
 ### Level 2: MySQL Migration, Queries & Analytical Insights
 
 #### Task 1: Import Cleaned Dataset into SQL
+* Migrate the cleaned 51,271-row e-commerce dataset from Excel/CSV into a structured MySQL relational database for SQL-based querying and validation.
 * Formatted date columns (order_date, ship_date) into YYYY-MM-DD format, stripped currency symbols and thousand-separator commas from numeric fields, and exported the cleaned Excel sheet as a CSV file.
 * Created primeor_ecommerce database and designed the orders table with an auto-incrementing primary key (id) and explicit data types (DATE, VARCHAR, INT, DECIMAL)
 * Loaded the CSV into MySQL using LOAD DATA INFILE via the secure uploads directory (secure_file_priv) for speed optimization and specified CHARACTER SET latin1 to avoid string errors.
