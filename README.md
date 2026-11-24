@@ -32,7 +32,7 @@ This project documents an end-to-end data analytics workflow on a **51,271-row e
 │   │── cleaned_dataset.xlsx         # Fully cleaned and validated 51k+ row dataset
 │   └── excel_analysis_file.xlsx     # Workbook containing Pivot Tables and visual
 ├── sql/
-│   ├── sql_queries_file.sql         # Database, table schema & analytical SQL queries
+│   └── sql_queries_file.sql         # Database, table schema & analytical SQL queries
 └── README.md
 ```
 ---
