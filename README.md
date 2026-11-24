@@ -22,6 +22,7 @@ This project documents an end-to-end data analytics workflow on a **51,271-row e
 ## 🛠️ Tech Stack & Tools
 * **Spreadsheet Analysis:** Microsoft Excel (Advanced Formulas, Array Formulas, XLOOKUP)
 * **Statistical Methods:** Interquartile Range (IQR) Analysis via `QUARTILE.EXC`
+* **Database** MySQL (GROUP BY, HAVING, Window Functions)
 
 ---
 
@@ -30,6 +31,8 @@ This project documents an end-to-end data analytics workflow on a **51,271-row e
 ├── excel/
 │   │── cleaned_dataset.xlsx         # Fully cleaned and validated 51k+ row dataset
 │   └── excel_analysis_file.xlsx     # Workbook containing Pivot Tables and visual
+├── sql/
+│   ├── sql_queries_file.sql         # Database, table schema & analytical SQL queries
 └── README.md
 ```
 ---
@@ -68,4 +71,6 @@ This project documents an end-to-end data analytics workflow on a **51,271-row e
 * **Least Profitable Categories:** Amongs main categories Furniture brings the lowest profit of nearly 2.90 lakhs which is less than half of Technology category and carries the highest average discount (16.80%, reaching upto 85%). At the sub-category level, Table is only loss-maker, lossing 64 thousand (-8.48% margin) on 7.50 lakhs+ sales.
 * **Most Commonly Used Shipping Mode:** Standard class shipping is most commonly used shipping mode, accounting for 59.57% usage, 75 lakhs+ in sales and nearly 8.90 lakhs in profit. It also has the lowest average shipping cost (~ 20), whereas Same Day is the least used (5.30% usage) with the highest average shipping cost (~ 43).
 
+### Level 3: Power BI Dashboard *(In Progress)*
+* Interactive executive dashboard covering KPI cards, regional/market performance, category & sub-category margins, discount vs. profit analysis, and sales trends.
 ---
