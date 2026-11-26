@@ -71,6 +71,12 @@ This project documents an end-to-end data analytics workflow on a **51,271-row e
 * **Least Profitable Categories:** Amongs main categories Furniture brings the lowest profit of nearly 2.90 lakhs which is less than half of Technology category and carries the highest average discount (16.80%, reaching upto 85%). At the sub-category level, Table is only loss-maker, lossing 64 thousand (-8.48% margin) on 7.50 lakhs+ sales.
 * **Most Commonly Used Shipping Mode:** Standard class shipping is most commonly used shipping mode, accounting for 59.57% usage, 75 lakhs+ in sales and nearly 8.90 lakhs in profit. It also has the lowest average shipping cost (~ 20), whereas Same Day is the least used (5.30% usage) with the highest average shipping cost (~ 43).
 
-### Level 3: Power BI Dashboard *(In Progress)*
-* Interactive executive dashboard covering KPI cards, regional/market performance, category & sub-category margins, discount vs. profit analysis, and sales trends.
+### Level 3: Power BI Interactive Dashboard
+
+* Connected the cleaned 51,271-row e-commerce dataset to Power BI Desktop and created core DAX measures (`Total Sales`, `Total Profit`, `Total Orders`, and `Average Discount`) to keep metrics consistent across all pages.
+* **Page 1 — Executive Overview:** Built a left navigation sidebar, project overview summary, interactive slicers, and four KPI cards displaying **Total Sales**, **Total Profit**, **Total Orders**, and **Average Discount**
+* **Page 2 — Sales Analysis:** Created visuals for **Sales by Region**, **Sales by Market**, **Monthly Sales Trend**, and **Category Performance** to highlight regional leaders, global market share, year-end seasonality, and category profitability.
+* **Page 3 — Product & Customer Insights:** Built visuals for **Top Products**, **Top Customers**, **Profit by Sub-Category**, and **Segment Analysis** across *Consumer*, *Corporate*, and *Home Office*.
+* **Slicers & Filters:** Added interactive dropdown slicers (`Region`, `Category`, `Segment`, `Ship Mode`, & `year`), Top-N filters on top products and customers, and a **Reset all filters** button across pages.
+
 ---
