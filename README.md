@@ -23,6 +23,7 @@ This project documents an end-to-end data analytics workflow on a **51,271-row e
 * **Spreadsheet Analysis:** Microsoft Excel (Advanced Formulas, Array Formulas, XLOOKUP)
 * **Statistical Methods:** Interquartile Range (IQR) Analysis via `QUARTILE.EXC`
 * **Database** MySQL (GROUP BY, HAVING, Window Functions)
+* **Dashboard** Power BI (Data Visualization)
 
 ---
 
@@ -35,6 +36,10 @@ This project documents an end-to-end data analytics workflow on a **51,271-row e
 │   └── sql_queries_file.sql         # Database, table schema & analytical SQL queries
 ├── dashboard/
 │   └── power_bi_dashboard.pbix      # Interactive dashboard
+├── images/
+│   │── page_1.png
+|   │── page_2.png       
+│   └── page_3.png
 └── README.md
 ```
 ---
