@@ -33,6 +33,8 @@ This project documents an end-to-end data analytics workflow on a **51,271-row e
 │   └── excel_analysis_file.xlsx     # Workbook containing Pivot Tables and visual
 ├── sql/
 │   └── sql_queries_file.sql         # Database, table schema & analytical SQL queries
+├── dashboard/
+│   └── power_bi_dashboard.pbix      # Interactive dashboard
 └── README.md
 ```
 ---
