@@ -30,16 +30,17 @@ This project documents an end-to-end data analytics workflow on a **51,271-row e
 ## 📁 Repository Structure
 ```text
 ├── excel/
-│   │── cleaned_dataset.xlsx         # Fully cleaned and validated 51k+ row dataset
-│   └── excel_analysis_file.xlsx     # Workbook containing Pivot Tables and visual
+│   │── cleaned_dataset.xlsx               # Fully cleaned and validated 51k+ row dataset
+│   └── excel_analysis_file.xlsx           # Workbook containing Pivot Tables and visual
 ├── sql/
-│   └── sql_queries_file.sql         # Database, table schema & analytical SQL queries
+│   └── sql_queries_file.sql               # Database, table schema & analytical SQL queries
 ├── dashboard/
-│   └── power_bi_dashboard.pbix      # Interactive dashboard
+│   └── power_bi_dashboard.pbix            # Interactive dashboard
 ├── images/
 │   │── page_1.png
 |   │── page_2.png       
 │   └── page_3.png
+├── final_business_insights_report.pdf     # Detailed analytical documentation
 └── README.md
 ```
 ---
