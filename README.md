@@ -107,3 +107,13 @@ This project documents an end-to-end data analytics workflow on a **51,271-row e
 *For a detailed breakdown of the findings, please refer to the [Final Business Insights Report](https://github.com/vaibhavpal0226/primeor-solutions-ecommerce-analysis/blob/main/final_business_insights_report.pdf).*
 
 ---
+
+## 👤 Author & Contact
+
+**Vaibhav Pal** <br>
+Aspiring Data Analyst
+* Email: vaibhav2021official@gmail.com
+* LinkedIn: https://www.linkedin.com/in/vaibhav-pal26/
+* Portfolio: https://github.com/vaibhavpal0226
+
+---
