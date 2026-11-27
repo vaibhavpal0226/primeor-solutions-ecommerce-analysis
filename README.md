@@ -86,6 +86,19 @@ This project documents an end-to-end data analytics workflow on a **51,271-row e
 
 ---
 
+## 📊 Dashboard Previews
+
+### **Page 1: Executive Overview**
+![Executive Overview](images/page_1.png)
+
+### **Page 2: Sales Analysis**
+![Sales Analysis](images/page_2.png)
+
+### **Page 3: Product & Customer Insights**
+![Product & Customer Insights](images/page_3.png)
+
+---
+
 ## 💡 Key Business Insights
 * **Markets & Regions:** **APAC** leads revenue (**₹35,81,785.00**, **12.20%** margin), **Canada** achieves the highest profit margin (**26.56%**), and **EMEA** has a thin **5.44%** margin. **Central** is the top region (**₹28,21,740.00** / **22.33%** share).
 * **Categories & Sub-Categories:** **Technology** leads profit (**₹6,63,336.35**) and per-item profit (**₹65.44**), while **Furniture** has the lowest category profit (**₹2,86,165.20**) and highest average discount (**16.80%**, up to **85%**). **Copiers** and **Phones** lead sub-category returns, whereas **Tables** is the only loss-making sub-category (**-₹64,113.61** profit / **-8.48%** margin).
