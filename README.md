@@ -74,9 +74,7 @@ This project documents an end-to-end data analytics workflow on a **51,271-row e
   * Ship mode usage analysis
 
 #### Task 3: Key SQL Insights
-* **Highest-Revenue Market:** APAC generates the highest revenue of more than 35 lakhs (across 5400+ orders) with 4 lakh+ in profit (which is  12.20% profit margin). Meanwhile Canada has lowest revenue of nearly 67 thousand but has highest profit margin (26.56%) amongs all market and EMEA has the lowest profit margin (5.44%).
-* **Least Profitable Categories:** Amongs main categories Furniture brings the lowest profit of nearly 2.90 lakhs which is less than half of Technology category and carries the highest average discount (16.80%, reaching upto 85%). At the sub-category level, Table is only loss-maker, lossing 64 thousand (-8.48% margin) on 7.50 lakhs+ sales.
-* **Most Commonly Used Shipping Mode:** Standard class shipping is most commonly used shipping mode, accounting for 59.57% usage, 75 lakhs+ in sales and nearly 8.90 lakhs in profit. It also has the lowest average shipping cost (~ 20), whereas Same Day is the least used (5.30% usage) with the highest average shipping cost (~ 43).
+* Summarized top revenue markets, loss-making categories/sub-categories, shipping mode distribution, discount-driven loss orders, and high-spend customer margin anomalies.
 
 ### Level 3: Power BI Interactive Dashboard
 
@@ -84,6 +82,13 @@ This project documents an end-to-end data analytics workflow on a **51,271-row e
 * **Page 1 — Executive Overview:** Built a left navigation sidebar, project overview summary, interactive slicers, and four KPI cards displaying **Total Sales**, **Total Profit**, **Total Orders**, and **Average Discount**
 * **Page 2 — Sales Analysis:** Created visuals for **Sales by Region**, **Sales by Market**, **Monthly Sales Trend**, and **Category Performance** to highlight regional leaders, global market share, year-end seasonality, and category profitability.
 * **Page 3 — Product & Customer Insights:** Built visuals for **Top Products**, **Top Customers**, **Profit by Sub-Category**, and **Segment Analysis** across *Consumer*, *Corporate*, and *Home Office*.
-* **Slicers & Filters:** Added interactive dropdown slicers (`Region`, `Category`, `Segment`, `Ship Mode`, & `year`), Top-N filters on top products and customers, and a **Reset all filters** button across pages.
+
+---
+
+## 💡 Key Business Insights
+* **Markets & Regions:** **APAC** leads revenue (**₹35,81,785.00**, **12.20%** margin), **Canada** achieves the highest profit margin (**26.56%**), and **EMEA** has a thin **5.44%** margin. **Central** is the top region (**₹28,21,740.00** / **22.33%** share).
+* **Categories & Sub-Categories:** **Technology** leads profit (**₹6,63,336.35**) and per-item profit (**₹65.44**), while **Furniture** has the lowest category profit (**₹2,86,165.20**) and highest average discount (**16.80%**, up to **85%**). **Copiers** and **Phones** lead sub-category returns, whereas **Tables** is the only loss-making sub-category (**-₹64,113.61** profit / **-8.48%** margin).
+* **Customers & Discount Leakage:** **Consumer** leads segment share (**51.47%**), followed by **Corporate** (**30.26%**) and **Home Office** (**18.27%**). Steep discounts (`35%–85%`) drive heavy order losses (e.g., order `CA-2013-108196` at **-₹6,892.37**) and even turn high-revenue buyers like *Sean Miller* (**₹33,194.00** sales) into a net loss (**-₹842.63**).
+* **Growth, Seasonality & Shipping:** Annual sales nearly doubled from **₹22,59,569.00** (2011) to **₹42,93,920.00** (2014), with consistent **November–December** peaks. **Standard Class** is the most used shipping mode (**59.57%** share, **₹19.97** avg shipping cost) compared to **Same Day** (**5.30%** share, **₹42.96** avg shipping cost).
 
 ---
