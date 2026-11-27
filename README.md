@@ -92,3 +92,12 @@ This project documents an end-to-end data analytics workflow on a **51,271-row e
 * **Growth, Seasonality & Shipping:** Annual sales nearly doubled from **₹22,59,569.00** (2011) to **₹42,93,920.00** (2014), with consistent **November–December** peaks. **Standard Class** is the most used shipping mode (**59.57%** share, **₹19.97** avg shipping cost) compared to **Same Day** (**5.30%** share, **₹42.96** avg shipping cost).
 
 ---
+
+## 🏁 Final Recommendations
+* Put caps on high discounts—especially in Furniture and Tables.
+* Focus on high-margin products (especially Technology category)
+* Optimize logistics to reduce shipping costs
+* Encourage standard shipping for better profitability
+* Build loyalty programs for high-value customers
+
+---
