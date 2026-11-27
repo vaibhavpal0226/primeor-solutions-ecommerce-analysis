@@ -101,3 +101,9 @@ This project documents an end-to-end data analytics workflow on a **51,271-row e
 * Build loyalty programs for high-value customers
 
 ---
+
+## 📄 Detailed Findings Report
+
+*For a detailed breakdown of the findings, please refer to the [Final Business Insights Report](https://github.com/vaibhavpal0226/primeor-solutions-ecommerce-analysis/blob/main/final_business_insights_report.pdf).*
+
+---
